@@ -8,31 +8,38 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
         }
+
+        /* HOME STYLING */
 
         .navbar {
-            display: block;
-            margin: auto;
-            width: 60%;
-            margin-top: 0px;
+            overflow: hidden;              
+            position: fixed;
+            top: 0;
+            width: 100%;
             background-color:rgb(3, 4, 5, 0.4);
-
+                
         }
-        .navbar ul {
-            background-position: top;
-            }
 
-        .navbar li {
+        .navbar ul {
             display: inline-block;
-            margin: auto;
-            padding: 20px;
+            list-style-type: none;
             text-align: center;
+        }
+     
+               
+        .navbar li {
+            padding: 20px;
             list-style: none;
+            display: inline;
+            margin: 5px;
+            text-align: center;
         }
 
         .navbar a {
             color: white;
-            text-decoration: none;
+            text-decoration: none;            
         }
 
         .navbar a:hover{
@@ -45,6 +52,8 @@
 
         .background-img {
             background-image: url(../Adedayo-portfolio/images/black-bricks-background.jpg);
+            width: 100%;
+            height: 800px;
         }
 
         .my-img {
@@ -54,24 +63,197 @@
             margin: auto;
         }
 
+        .white-text-color {
+            color: white;
+            text-align: center;
+        }
+
+        /* ABOUT ME STYLING */
+
+        .about-header {
+            text-align: center;
+        }
+
+        hr {
+            width: 80%;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: white;
+            }
+
+        .flex-container-box {
+            background-color: white;
+            width: 50%;
+            margin: 30px;
+            text-align: center;
+            line-height: 35px;
+            font-size: 16px;
+            }
+
+/* Work Styling */
+
+        .flex-container-work {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: white;
+            margin: 20px;
+            }
+
+        .flex-container-box-work {
+            background-color: white;
+            width: 40%;
+            margin: 30px;
+            text-align: center;
+            line-height: 55px;
+            font-size: 16px;
+            }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 30%;
+            margin: 30px;
+            }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+
+        .container {
+            padding: 2px 16px;
+            }
+    
+
+
+
+
 
 
 
     </style>
 </head>
+
 <body>
+                                                        <!-- Home Start -->
     <div class="background-img">
         <div class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
              </ul>
         </div>
+        <br><br><br><br>
         <div>
             <img class="my-img" src="../Adedayo-portfolio/images/me.jpg" alt="">
         </div>
+
+        <h3 class="white-text-color">Hello, I'm</h3>
+        <h1 class="white-text-color">Olatunde Adedayo</h1>
+        <p class="white-text-color">AND THIS IS MY WORLD</p>
     </div>
+                                                        <!-- Home End -->
+
+                                                         <!-- About Start -->
+    <div id="about">
+        <h2 class="about-header">ABOUT ME</h2>
+        <hr>
+        <div class="flex-container">
+            <div class="flex-container-box">
+                <img class="about-my-img" src="../Adedayo-portfolio/images/me.jpg" alt="">
+    
+            </div>
+            <div class="flex-container-box">
+                <h2>Wanna know me more?</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id odio ut tempora error eius illo deserunt dolor eveniet omnis in!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta dolores culpa facere officiis maiores quasi assumenda a, quae voluptate omnis.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem possimus magni inventore quas voluptate minima nemo ducimus iure consequuntur. Consequuntur.
+                </p>
+                
+    
+            </div>
+        </div>
+    </div>
+
+                                                        <!-- About End -->
+
+                                                        <!-- Work Start -->
+    <div id="work">
+        <h2 class="about-header">WORKS</h2>
+        <hr>
+        <div class="flex-container">
+            <div class="card">
+                <img src="../Adedayo-portfolio/images/service1.PNG" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>NOT MY WORK</b></h4> 
+                    <p>JUST PLACE HOLDERS</p> 
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Adedayo-portfolio/images/service2.PNG" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>NOT MY WORK</b></h4> 
+                    <p>JUST PLACE HOLDERS</p> 
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Adedayo-portfolio/images/service3.PNG" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>NOT MY WORK</b></h4> 
+                    <p>JUST PLACE HOLDERS</p> 
+                </div>
+              </div>
+        </div>
+        <div class="flex-container">
+            <div class="card">
+                <img src="../Adedayo-portfolio/images/service4.PNG" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>NOT MY WORK</b></h4> 
+                    <p>JUST PLACE HOLDERS</p> 
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Adedayo-portfolio/images/service5.PNG" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>NOT MY WORK</b></h4> 
+                    <p>JUST PLACE HOLDERS</p> 
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Adedayo-portfolio/images/service6.PNG" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>NOT MY WORK</b></h4> 
+                  <p>JUST PLACE HOLDERS</p> 
+                </div>
+              </div>
+        </div>        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                        <!-- Work End -->
+                                                        <!-- Contact Start -->
+                                                        <!-- Contact End -->
 </body>
     </html>
