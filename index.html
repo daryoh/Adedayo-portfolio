@@ -15,29 +15,63 @@
             margin: auto;
             width: 60%;
             margin-top: 0px;
+            background-color:rgb(3, 4, 5, 0.4);
+
         }
         .navbar ul {
-            background-color: black;
             background-position: top;
-            
-        }
+            }
+
         .navbar li {
             display: inline-block;
             margin: auto;
             padding: 20px;
             text-align: center;
+            list-style: none;
         }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar a:hover{
+            color: rgb(24, 202, 101);
+        }
+
+        .navbar a:active{
+            color: springgreen;
+        }
+
+        .background-img {
+            background-image: url(../Adedayo-portfolio/images/black-bricks-background.jpg);
+        }
+
+        .my-img {
+            border-radius: 50%;
+            display: block;
+            width: 20%;
+            margin: auto;
+        }
+
+
+
+
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</body>
+    <div class="background-img">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+             </ul>
+        </div>
+        <div>
+            <img class="my-img" src="../Adedayo-portfolio/images/me.jpg" alt="">
+        </div>
     </div>
-    
-</html>
+</body>
+    </html>
